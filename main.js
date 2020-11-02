@@ -22,7 +22,7 @@ let Stack = function() {
     this.peek = function() {
         return this.storage[this.index - 1];
     };
-};
+}; 
 
 let myStack = new Stack();
 

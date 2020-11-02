@@ -11,9 +11,9 @@ function LinkList() {
         let node = new Node(data);
         let currentNode = null;
 
-        if (this.head === null) {
+        if (this.head === null) { // chua co node
             this.head = node;
-        } else {
+        } else { // co nhieu hon 1  node
             currentNode = this.head;
             while (currentNode.next) {
                 currentNode = currentNode.next;
@@ -27,3 +27,13 @@ function LinkList() {
         let prev = null;
     };
 }
+
+let myList = new LinkList();
+
+myList.add('abcabvc');
+myList.add('abcabv');
+myList.add('abcab');
+myList.add('abca');
+myList.add('abc');
+
+console.log(myList);
